@@ -17,7 +17,7 @@ using gradient descent on the Mean Squared Error (MSE) loss.
 - Data generation / preparation
 - Data visualization (scatter plot)
 - Manual implementation of the MSE loss
-- Derivation of gradients \(\partial L / \partial a\) and \(\partial L / \partial b\)
+- Derivation of gradients $(\partial L / \partial a$ and $(\partial L / \partial b$.
 - Implementation of `gradient_descent(...)`
 - Training loop to update \(a\) and \(b\)
 - Plot of the final fitted regression line
