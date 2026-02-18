@@ -6,9 +6,9 @@ This notebook shows how to implement **linear regression from scratch** in Pytho
 
 Train a regression line of the form:
 
-\[
+$$
 \hat{y} = ax + b
-\]
+$$
 
 using gradient descent on the Mean Squared Error (MSE) loss.
 
@@ -26,28 +26,28 @@ using gradient descent on the Mean Squared Error (MSE) loss.
 
 Loss function:
 
-\[
+$$
 L(a,b) = \frac{1}{n}\sum_{i=1}^{n}\left(y_i - (ax_i + b)\right)^2
-\]
+$$
 
 Gradients:
 
-\[
+$$
 \frac{\partial L}{\partial a}
 = -\frac{2}{n}\sum_{i=1}^{n}x_i\left(y_i-(ax_i+b)\right)
-\]
+$$
 
-\[
+$$
 \frac{\partial L}{\partial b}
 = -\frac{2}{n}\sum_{i=1}^{n}\left(y_i-(ax_i+b)\right)
-\]
+$$
 
 Parameter updates:
 
-\[
+$$
 a \leftarrow a - \eta \frac{\partial L}{\partial a}, \quad
 b \leftarrow b - \eta \frac{\partial L}{\partial b}
-\]
+$$
 
 ## Tech Stack
 
