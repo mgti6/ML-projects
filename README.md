@@ -6,19 +6,41 @@ A collection of machine learning projects covering supervised, unsupervised, and
 
 | Folder | Description |
 |---|---|
-| `supervised_learning/` | Supervised learning projects (classification, regression) |
-| `unsupervised_learning/` | Unsupervised learning projects (clustering) |
+| `supervised_learning/` | Regression and classification projects |
+| `unsupervised_learning/` | Clustering projects |
 | `deep/` | Neural networks built from scratch with NumPy |
 
 ## Projects
 
 ### Supervised
-- **Titanic** — survival prediction with EDA and model selection
-- **Linear regression from scratch** — gradient descent implementation
-- **California Housing** — end-to-end regression pipeline with custom transformers, feature engineering, and hyperparameter tuning (GridSearch / RandomizedSearch)
+
+**Titanic** — Binary classification predicting passenger survival  
+`supervised_learning/titanic/`
+- Exploratory data analysis and feature engineering
+- Model selection and evaluation
+
+**Linear Regression from Scratch** — Gradient descent implementation without sklearn  
+`supervised_learning/linear_regression_from_scratch/`
+- Manual implementation of gradient descent
+- Comparison with the analytical solution
+
+**California Housing** — End-to-end regression pipeline predicting house prices  
+`supervised_learning/california_housing.ipynb`
+- Custom sklearn transformers (`ClusterSimilarity`, ratio features, log features)
+- Full `ColumnTransformer` pipeline with geographic, numerical and categorical features
+- Models tested: Linear Regression, Decision Tree, Random Forest
+- Hyperparameter tuning: GridSearchCV and RandomizedSearchCV
+- Best RMSE ~42 000 $ (Random Forest, RandomizedSearch)
 
 ### Unsupervised
-- **Customer segmentation** — K-Means clustering on Online Retail II dataset
+
+**Customer Segmentation** — K-Means clustering on the Online Retail II dataset  
+`unsupervised_learning/customer_clustering/`
+- RFM feature engineering (Recency, Frequency, Monetary)
+- Optimal k selection with elbow method and silhouette score
 
 ### Deep Learning
-- **Artificial neuron** — single neuron with gradient descent, sigmoid, decision boundary
+
+**Artificial Neuron** — Single neuron built from scratch with NumPy  
+`deep/neural_artificial.ipynb`
+- Gradient descent, sigmoid activation, decision boundary visualization
