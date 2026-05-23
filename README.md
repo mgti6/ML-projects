@@ -15,6 +15,7 @@ A collection of machine learning projects covering supervised, unsupervised, and
 ### Supervised
 - **Titanic** — survival prediction with EDA and model selection
 - **Linear regression from scratch** — gradient descent implementation
+- **California Housing** — end-to-end regression pipeline with custom transformers, feature engineering, and hyperparameter tuning (GridSearch / RandomizedSearch)
 
 ### Unsupervised
 - **Customer segmentation** — K-Means clustering on Online Retail II dataset
