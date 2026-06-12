@@ -1,24 +1,26 @@
 # Deep Learning from Scratch
 
-Implementation of neural network concepts from scratch using only NumPy, without high-level frameworks.
+Implémentation de réseaux de neurones from scratch en Python/NumPy, sans framework de deep learning.
 
 ## Notebooks
 
 | Notebook | Description |
 |---|---|
-| `neural_artificial.ipynb` | Single artificial neuron — logistic regression, gradient descent, sigmoid, decision boundary |
+| `first_neuron.ipynb` | Neurone artificiel — sigmoïde, log-loss, descente de gradient, frontière de décision animée, classification chats/chiens |
+| `neural_network.ipynb` | Réseaux multicouches — `Neural_Network` (1 couche cachée) et `DeepNeuralNetwork` (architecture configurable) |
 
-## Concepts covered
+## Concepts couverts
 
-- Forward propagation
-- Log loss (binary cross-entropy)
-- Gradient descent
-- Sigmoid activation function
-- Decision boundary visualization (2D and 3D)
+- Propagation avant et rétropropagation
+- Log-loss (binary cross-entropy)
+- Descente de gradient
+- Activation sigmoïde
+- Visualisation animée de la frontière de décision
+- Classification d'images (64×64, chats vs chiens)
 
 ## Dataset
 
-The `datasets/` folder contains train/test sets of 64×64 images (cats vs dogs) used to test the neuron on real image data.
+Le dossier `datasets/` contient les sets d'entraînement et de test d'images 64×64 (chats vs chiens).
 
 ## Requirements
 
@@ -26,7 +28,6 @@ The `datasets/` folder contains train/test sets of 64×64 images (cats vs dogs) 
 numpy
 matplotlib
 scikit-learn
-plotly
 tqdm
 h5py
 ```
