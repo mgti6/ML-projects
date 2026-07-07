@@ -14,6 +14,13 @@ A collection of machine learning projects covering supervised, unsupervised, and
 
 ### Supervised
 
+**Credit Scoring** — Predicting borrower default risk (Kaggle "Give Me Some Credit")  
+`supervised_learning/credit_scoring/`
+- Custom sklearn preprocessing: sentinel error codes, winsorizing, log-transform with neutralization
+- Logistic Regression, HistGradientBoostingClassifier, and stacking compared
+- Precision/recall trade-off analysis for business-driven threshold selection
+- Best ROC AUC 0.868 / PR AUC 0.404 (HistGradientBoostingClassifier)
+
 **Titanic** — Binary classification predicting passenger survival  
 `supervised_learning/titanic/`
 - Exploratory data analysis and feature engineering

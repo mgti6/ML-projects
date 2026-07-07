@@ -2,6 +2,13 @@
 
 ## Projects
 
+### Credit Scoring — Give Me Some Credit (Kaggle)
+`credit_scoring/`
+- Custom preprocessing for sentinel error codes, winsorizing, and log-transform with neutralization
+- Logistic Regression vs. HistGradientBoostingClassifier vs. stacking
+- Precision/recall trade-off analysis for threshold selection
+- Best: HGB, ROC AUC 0.868 / PR AUC 0.404
+
 ### Titanic — Binary Classification
 `titanic/`
 - Exploratory data analysis and feature engineering
